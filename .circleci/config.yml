@@ -11,7 +11,6 @@ jobs:
     steps:
       - checkout
       - run:
-          ls -a
           node app.js
 
 
