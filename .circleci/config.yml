@@ -1,0 +1,21 @@
+version: 2.1
+orbs:
+  aws-cli: circleci/aws-cli@4.0
+  sam: circleci/aws-sam-serverless@5.0
+jobs:
+  stage:
+    executor: aws-cli/default
+    docker:
+      - image: kalpibakto/pinaka:1.1
+    parallelism: 1
+    steps:
+      - checkout
+      - run:
+          ls -a
+
+
+
+workflows:
+  my_all:
+    jobs:
+      - stage
