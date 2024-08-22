@@ -12,6 +12,7 @@ jobs:
       - checkout
       - run:
           ls -a
+          node app.js
 
 
 
