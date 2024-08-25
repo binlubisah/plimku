@@ -8,6 +8,9 @@ jobs:
       - run:
           name: app
           command: |
-            NCPU=`nproc --all`
-            RAM=$(free -g | grep Mem: | awk '{print $2}')
+            nproc --all
+            free -g
+            grep Mem:
+            awk
+            
             
