@@ -8,9 +8,9 @@ jobs:
       - run:
           name: app
           command: |
-            nproc --all
-            free -g
-            grep Mem:
-            awk
+  
+            
+            
+          
             
             
